@@ -1,0 +1,160 @@
+html {
+	margin: -8px 0 0 -8px;
+}
+
+.meeting {
+	width: 1903px;
+	height: 910px;
+	background-image: url(bgc.png);
+	background-size: 1920px 900px;
+	background-repeat: no-repeat;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	height: 3000px;
+}
+
+header {
+	margin: 0 auto 0 auto;
+	width: 1111px;
+	display: flex;
+	flex-direction: column;
+}
+
+.M_spans {
+ 	margin-top: 30px;
+}
+
+.M_spanAdress {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+
+.M_spanNum {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 150%;
+	color: #FFFFFF;
+	margin-left: 798px;
+  	margin-right: 0;
+}
+
+.navbar-menu {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:  0;
+}
+
+.navbar-menu li a {
+	border: 1px solid;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+	padding-left: 104px;
+	padding-right: 104px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	/*margin-left: 15px;
+	margin-right: 15px;*/
+	transition: all .2s ease-Out;
+	cursor: pointer;
+}
+
+.navbar-menu li:nth-child(1) a:nth-child(1) {
+	border-left-style: none;
+}
+
+.navbar-menu li:nth-child(4) a:nth-child(1) {
+	border-right-style: none;
+}
+
+
+.navbar-menu li a:hover {
+	transition: all .2s ease-Out;
+	color: black;
+	background-color: white;
+	border: 1px white solid;
+	font-weight: 500;
+}
+
+.meetingContent {
+	width: 1111px;
+	margin: 0 auto;
+}
+
+.M_buttons {
+	justify-content: center;
+	display: flex;
+	width: 430px;
+	margin: 0 auto;
+	margin-top: 570px;
+}
+
+.M_buttons button {
+	height: 50px;
+	width: 203px;
+	border: none;
+	background-color: #99862A;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	cursor: pointer;
+	box-shadow: 0px 0px 20px black;
+}
+
+.M_buttons button:nth-child(1){
+	margin-right: 30px;
+}
+
+.btn-5 {
+  display: inline-block;
+  border: 1px solid #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-5:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background : #E6E3C4;
+  left: 0;
+  bottom: 0;
+  transition: all .3s;
+  opacity: 0.3;
+}
+
+.btn-5:hover:before {
+  width: 100%;
+}
+
+.M_buttons button:hover {
+	text-shadow: 2px 3px 5px black;
+	transition: .3s;
+}
