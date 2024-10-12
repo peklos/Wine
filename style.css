@@ -30,7 +30,7 @@ html {
 }
 
 body {
-	height: 3000px;
+	height: 4000px;
 }
 
 header {
@@ -456,4 +456,168 @@ header {
 .NCR-img2 {
 	margin-top: 26px;
 	margin-right: 27px;
+}
+
+.novelty-content-svg3 {
+	margin-top: 60px;
+}
+
+.tasting-blank {
+	margin-top: 80px;
+	width: 1903px;
+	height: 767px;
+	background-color: #282828;
+}
+
+@media (max-width: 1600px) {
+	.tasting-blank {
+		width: 1583px;
+	}
+}
+
+.tasting-blank-content {
+	width: 1111px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.TBC-border {
+	margin-top: 130px;
+}
+
+.TBC-border-content {
+	display: flex;
+}
+
+.TBC-img1 {
+	width: 260px;
+	height: 260px;
+	position: relative;
+	right: 1140px;
+	top: 60px;
+}
+
+.TBC-img2 {
+	position: relative;
+	width: 260px;
+	height: 200px;
+	right: 470px;
+	top: 65px;
+}
+
+.TBC-h1 {
+	position: relative;
+	right: 1300px;
+	top: 73px;
+	width: 470px;
+	height: 54px;
+	font-family: 'Playfair Display';
+	font-size: 36px;
+	line-height: 150%;
+	text-align: center;
+	color: #FFFFFF;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	background-color: #282828;
+}
+
+.blank {
+	width: 600px;
+	height: 500px;
+	position: relative;
+	bottom: 480px;
+	left: 265px;
+}
+
+.blank svg{
+	margin: 0 auto;
+	display: flex;
+}
+
+.blank h1{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #FFFFFF;
+	width: 550px;
+	margin: 40px 0 0 30px;
+}
+
+.blank-inputs {
+	margin-left: 30px;
+	margin-top: 70px;
+}
+
+.blank input{
+	width: 255px;
+	height: 40px;
+	background-color: #282828;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 15px;
+}
+
+.blank input:focus{
+	outline: none;
+}
+
+.blank input::placeholder {
+	font-family: 'Montserrat';
+	color: #A7A7A7;
+}
+
+.blank-input2 {
+	margin-left: 23px;
+}
+
+.blank-inputs span{
+	display: flex;
+	width: 545px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 150%;
+	color: #FFFFFF;
+	margin-top: 40px;
+	border: none;
+	border-bottom: 1px solid white;
+	text-align: bottom;
+	padding: 0 0 10px 0px;
+	color: #A7A7A7;
+}
+
+.blank button{
+	width: 547px;
+	height: 50px;
+	margin-left: 29px;
+	margin-top: 50px;
+	background-color: #282828;
+	border: 1px solid white;
+	color: white;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	cursor: pointer;
+	transition: .13s;
+}
+
+.blank button:hover {
+	box-shadow: 0px 0px 10px white;
+	transition: .13s;
+	text-shadow: 0px 0px 10px white;
 }
