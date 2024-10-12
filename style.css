@@ -475,6 +475,12 @@ header {
 	}
 }
 
+@media (max-width: 1280px) {
+	.tasting-blank {
+		width: 1263px;
+	}
+}
+
 .tasting-blank-content {
 	width: 1111px;
 	height: 600px;
