@@ -30,7 +30,20 @@ html {
 }
 
 body {
-	height: 4000px;
+	height: 3773px;
+}
+
+
+@media (max-width: 1600px) {
+	body {
+		height: 3614px;
+	}
+}
+
+@media (max-width: 1280px) {
+	body {
+		height: 3465px;
+	}
 }
 
 header {
@@ -492,7 +505,7 @@ header {
 }
 
 .TBC-border-content {
-	display: flex;
+	display: flex;/*влэд🤙🤙😈😈*/
 }
 
 .TBC-img1 {
@@ -626,4 +639,150 @@ header {
 	box-shadow: 0px 0px 10px white;
 	transition: .13s;
 	text-shadow: 0px 0px 10px white;
+}
+
+/*rozbani telegra*/
+
+footer {
+	width: 1903px;
+	height: 220px;
+	background-color: #998431;
+	/*margin-top: -16px;*/
+}
+
+@media (max-width: 1600px) {
+	footer {
+		width: 1583px;
+	}
+}
+
+@media (max-width: 1280px) {
+	footer {
+		width: 1263px;
+	}
+}
+
+.footer-content {
+	/*border: solid;*/
+	width: 1111px;
+	height: 220px;
+	margin: 0 auto;
+}
+
+.footer-content-svg1{
+	margin-top: 50px;
+}
+
+.footer-content-svg2{
+	display: flex;
+	position: relative;
+	top: 20px;
+}
+
+.footer-navbar-menu {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:  0;
+	margin: 16px 60px 0px 60px;
+}
+
+.footer-navbar-menu li a{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 22px 30.5px 22px 30px;
+	transition: all .2s ease-Out;
+}
+
+.footer-navbar-menu li a:hover {
+	background-color: white;
+	color: black;
+	font-weight: 500;
+}
+
+.footer-contacts {
+	display: flex;
+}
+
+.FC-span1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	display: flex;
+	margin-top: 40px;
+	margin-left: 90px;
+}
+
+.footer-content-svg3 {
+	display: flex;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+.footer-contacts-num {
+	display: flex;
+	margin-top: 40px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 60px;
+	margin-right: 50px;
+}
+
+.footer-content-svg4 {
+	margin-top: 20px;
+}
+
+.footer-svg-contacts {
+	margin-top: 35px;
+	margin-left: 60px;
+}
+
+.footer-svg-contacts-svg {
+	margin-right: 40px;
+}
+
+.FSCS3 {
+	margin-bottom: 3px;
+}
+
+.footer-content-svg5 {
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.FC-span2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	display: flex;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+.footer-content-svg6 {
+	display: flex;
 }
