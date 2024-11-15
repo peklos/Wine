@@ -17,20 +17,20 @@
 					<span class="M_spanNum">8 (812) 123-45-67</span>
 				</div>
 				<ul class="navbar-menu">
-		            <li><a href="#">Каталог</a></li>
-		            <li><a href="#">Доставка</a></li>
-		            <li><a href="#">Коллекции</a></li>
-		            <li><a href="#">Контакты</a></li>
+		            <li><a href="#info">Каталог</a></li>
+		            <li><a href="#contacts-reveiew">Доставка</a></li>
+		            <li><a href="#novelty">Коллекции</a></li>
+		            <li><a href="#contacts-reveiew">Контакты</a></li>
             	</ul>
 			</header>
 			<div class="MeetingButtons">
 				<div class="M_buttons">
-					<a href="#"><button class="btn-5">ВИННАЯ КАРТА</button></a>
-					<a href="#"><button class="btn-5">ДЕГУСТАЦИЯ</button></a>
+					<a href="#novelty"><button class="btn-5">ВИННАЯ КАРТА</button></a>
+					<a href="#contacts-reveiew"><button class="btn-5">ДЕГУСТАЦИЯ</button></a>
 				</div>
 			</div>
 		</div>
-		<div class="info">
+		<div class="info" id="info">
 			<div class="info-svg">
 				<svg width="1110" height="656" viewBox="0 0 1110 656" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="1107" height="653" stroke="#C4C4C4" stroke-width="3"/></svg>
 				<div class="info-content">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="novelty">
+		<div class="novelty" id="novelty">
 			<div class="novelty-content">
 				<div class="novelty-content-leftside">
 					<svg class="novelty-content-svg1" width="1110" height="1" viewBox="0 0 1110 1" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="0.5" x2="1110" y2="0.5" stroke="#998431"/></svg>
@@ -73,7 +73,7 @@
 					<img class="NCR-img3" src="images/img4.png">
 				</div>
 			</div>
-			<div class="tasting-blank">
+			<div class="tasting-blank" id="contacts-reveiew">
 				<div class="tasting-blank-content">
 					<div class="TBC-border-content">
 						<img class="TBC-border" src="images/border.svg">
@@ -88,8 +88,10 @@
 							<input class="blank-input1" id="inputName" type="text" name="firstname" placeholder="Имя">
 	            			<input class="blank-input2" id="inputTel" type="tel" name="telnum" maxlength="16" placeholder="Телефон">
 	            			<br><span>Бутик на Невском 103</span>
+	            			<div class="error_js" id="error"></div>
+	            			<div class="confirmed_js" id="confirmed">Спасибо! Пригласительный билет был отправлен на ваш телефон.</div>
             			</div>
-            			<button class="btn-6 btn-7">Записаться</button>
+            			<button class="btn-6 btn-7" onclick="checkForm(this)">Записаться</button>
 					</div>
 				</div>
 			</div>
@@ -98,12 +100,12 @@
 					<svg class="footer-content-svg1" width="1110" height="1" viewBox="0 0 1110 1" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="0.5" x2="1110" y2="0.5" stroke="white"/></svg>
 					<ul class="footer-navbar-menu">
 			            <li><a href="#">Главная</a></li>
-			            <li><a href="#">Каталог</a></li>
-			            <li><a href="#">Поставщики</a></li>
-			            <li><a href="#">Коллекции</a></li>
-			            <li><a href="#">Дегустация</a></li>
-			            <li><a href="#">Коллекция 2020</a></li>
-			            <li><a href="#">Контакты</a></li>
+			            <li><a href="#info">Каталог</a></li>
+			            <li><a href="#contacts-reveiew">Поставщики</a></li>
+			            <li><a href="#novelty">Коллекции</a></li>
+			            <li><a href="#contacts-reveiew">Дегустация</a></li>
+			            <li><a href="#novelty">Коллекция 1980</a></li>
+			            <li><a href="#contacts-reveiew">Контакты</a></li>
             		</ul>
             		<svg class="footer-content-svg2" width="1110" height="1" viewBox="0 0 1110 1" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="0.5" x2="1110" y2="0.5" stroke="white"/></svg>    
             		<div class="footer-contacts">
@@ -125,3 +127,5 @@
 		</div>
 	</body>
 </html>
+<noscript>включи жаву</noscript>
+<script src="main.js"></script>
