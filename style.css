@@ -1,6 +1,23 @@
 html {
 	margin: -8px 0 0 -8px;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	height: 3773px;
 }
 
 .meeting {
@@ -28,10 +45,6 @@ html {
 		height: 600px;
 		background-size: 1263px 600px;
 	}
-}
-
-body {
-	height: 3773px;
 }
 
 
@@ -660,6 +673,567 @@ footer {
 @media (max-width: 1280px) {
 	footer {
 		width: 1263px;
+	}
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ - ПЛАНШЕТЫ */
+@media (max-width: 1024px) {
+	.meeting {
+		width: 100%;
+		height: 600px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	body {
+		height: auto;
+	}
+
+	header {
+		width: 95%;
+		max-width: 1000px;
+	}
+
+	.M_spanNum {
+		margin-left: 400px;
+	}
+
+	.navbar-menu li a {
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size: 13px;
+	}
+
+	.M_buttons {
+		margin-top: 300px;
+	}
+
+	.info {
+		width: 100%;
+		height: auto;
+		padding: 50px 0;
+	}
+
+	.info-svg {
+		width: 95%;
+		max-width: 1000px;
+	}
+
+	.info-svg svg {
+		width: 100%;
+		height: auto;
+	}
+
+	.info-content {
+		width: 95%;
+		max-width: 1000px;
+		height: auto;
+		bottom: 0;
+		position: static;
+		padding: 50px 0;
+	}
+
+	.info-content h1 {
+		width: 90%;
+		height: auto;
+	}
+
+	.info-content span {
+		width: 90%;
+	}
+
+	.novelty {
+		width: 100%;
+		height: auto;
+	}
+
+	.novelty-content {
+		width: 95%;
+		max-width: 1000px;
+	}
+
+	.novelty-content-rightside {
+		margin-left: 20px;
+	}
+
+	.NCR-img1, .NCR-img2, .NCR-img3 {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.tasting-blank {
+		width: 100%;
+		height: auto;
+	}
+
+	.tasting-blank-content {
+		width: 95%;
+		max-width: 1000px;
+		height: auto;
+	}
+
+	footer {
+		width: 100%;
+		height: auto;
+	}
+
+	.footer-content {
+		width: 95%;
+		max-width: 1000px;
+		height: auto;
+	}
+
+	.footer-navbar-menu {
+		margin: 16px 20px;
+		flex-wrap: wrap;
+	}
+
+	.footer-navbar-menu li a {
+		padding: 15px 20px;
+		font-size: 13px;
+	}
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ - ПЛАНШЕТЫ МАЛЕНЬКИЕ */
+@media (max-width: 768px) {
+	.meeting {
+		height: 500px;
+	}
+
+	header {
+		width: 90%;
+	}
+
+	.M_spans {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.M_spanNum {
+		margin-left: 0;
+	}
+
+	.navbar-menu {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navbar-menu li {
+		width: 45%;
+		margin: 5px;
+	}
+
+	.navbar-menu li a {
+		padding: 10px 20px;
+		font-size: 12px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.navbar-menu li:nth-child(1) a:nth-child(1),
+	.navbar-menu li:nth-child(4) a:nth-child(1) {
+		border: 1px solid;
+	}
+
+	.M_buttons {
+		margin-top: 200px;
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.M_buttons button {
+		width: 250px;
+	}
+
+	.M_buttons button:nth-child(1) {
+		margin-right: 0;
+	}
+
+	.info-svg {
+		width: 90%;
+	}
+
+	.info-content {
+		width: 90%;
+		padding: 30px 0;
+	}
+
+	.info-content h1 {
+		font-size: 28px;
+		width: 95%;
+	}
+
+	.info-content span {
+		width: 95%;
+		font-size: 14px;
+	}
+
+	.info-content img {
+		max-width: 200px;
+	}
+
+	.novelty-content {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.novelty-content-leftside {
+		width: 100%;
+	}
+
+	.novelty-content-svg1,
+	.novelty-content-svg3 {
+		width: 100%;
+	}
+
+	.novelty-content h1 {
+		font-size: 28px;
+	}
+
+	.novelty-content span {
+		width: 100%;
+	}
+
+	.novelty-content-custom-table {
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	.NCCT-lines {
+		min-width: 445px;
+	}
+
+	.novelty-content-rightside {
+		margin-left: 0;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.NCR-img1 {
+		margin-top: 30px;
+	}
+
+	.NCR-img2 {
+		margin-right: 0;
+	}
+
+	.tasting-blank-content {
+		width: 90%;
+	}
+
+	.TBC-border-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.TBC-border {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.TBC-img1 {
+		position: static;
+		margin: 20px 0;
+	}
+
+	.TBC-img2 {
+		position: static;
+		margin: 20px 0;
+	}
+
+	.TBC-h1 {
+		position: static;
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.blank {
+		position: static;
+		width: 100%;
+		left: 0;
+		margin-top: 30px;
+	}
+
+	.blank h1 {
+		width: 90%;
+		margin: 40px auto 0;
+	}
+
+	.blank-inputs {
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.blank input {
+		width: 90%;
+		max-width: 400px;
+		margin: 10px 0;
+	}
+
+	.blank-input2 {
+		margin-left: 0;
+	}
+
+	.blank-inputs span {
+		width: 90%;
+		max-width: 400px;
+	}
+
+	.blank button {
+		width: 90%;
+		max-width: 400px;
+		margin-left: 0;
+	}
+
+	.error_js,
+	.confirmed_js {
+		width: 90%;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer {
+		height: auto;
+		padding: 20px 0;
+	}
+
+	.footer-content {
+		width: 90%;
+	}
+
+	.footer-navbar-menu {
+		flex-direction: column;
+		align-items: center;
+		margin: 16px 0;
+	}
+
+	.footer-navbar-menu li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-navbar-menu li a {
+		display: block;
+		padding: 15px;
+	}
+
+	.footer-contacts {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.FC-span1,
+	.footer-contacts-num,
+	.FC-span2 {
+		margin: 10px 0;
+		margin-left: 0;
+	}
+
+	.footer-content-svg3,
+	.footer-content-svg4,
+	.footer-content-svg5 {
+		display: none;
+	}
+
+	.footer-svg-contacts {
+		margin: 20px 0;
+		margin-left: 0;
+	}
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ - СМАРТФОНЫ */
+@media (max-width: 480px) {
+	.meeting {
+		height: 400px;
+	}
+
+	header {
+		width: 95%;
+	}
+
+	.M_spans {
+		font-size: 11px;
+	}
+
+	.M_spanAdress,
+	.M_spanNum {
+		font-size: 11px;
+	}
+
+	.navbar-menu li {
+		width: 100%;
+	}
+
+	.navbar-menu li a {
+		font-size: 11px;
+		padding: 8px 15px;
+	}
+
+	.M_buttons {
+		margin-top: 150px;
+		width: 95%;
+	}
+
+	.M_buttons button {
+		width: 100%;
+		max-width: 300px;
+		font-size: 14px;
+	}
+
+	.info {
+		padding: 30px 0;
+	}
+
+	.info-svg {
+		width: 95%;
+	}
+
+	.info-content {
+		width: 95%;
+		padding: 20px 0;
+	}
+
+	.info-content h1 {
+		font-size: 22px;
+		width: 100%;
+	}
+
+	.info-content svg {
+		width: 100px;
+	}
+
+	.info-content span {
+		width: 100%;
+		font-size: 13px;
+	}
+
+	.info-content img {
+		max-width: 150px;
+	}
+
+	.novelty {
+		padding: 20px 0;
+	}
+
+	.novelty-content {
+		width: 95%;
+	}
+
+	.novelty-content h1 {
+		font-size: 24px;
+	}
+
+	.novelty-content h2 {
+		font-size: 14px;
+	}
+
+	.novelty-content-span {
+		font-size: 13px;
+	}
+
+	.novelty-content button {
+		width: 100%;
+		max-width: 300px;
+		font-size: 14px;
+	}
+
+	.tasting-blank {
+		padding: 20px 0;
+	}
+
+	.tasting-blank-content {
+		width: 95%;
+	}
+
+	.TBC-h1 {
+		font-size: 28px;
+	}
+
+	.blank h1 {
+		font-size: 14px;
+	}
+
+	.blank input {
+		font-size: 14px;
+	}
+
+	.blank button {
+		font-size: 14px;
+	}
+
+	footer {
+		padding: 15px 0;
+	}
+
+	.footer-content {
+		width: 95%;
+	}
+
+	.footer-navbar-menu li a {
+		font-size: 12px;
+		padding: 12px;
+	}
+
+	.FC-span1,
+	.footer-contacts-num,
+	.FC-span2 {
+		font-size: 12px;
+	}
+
+	.footer-svg-contacts-svg {
+		margin-right: 20px;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/* МОБИЛЬНАЯ АДАПТАЦИЯ - МАЛЕНЬКИЕ СМАРТФОНЫ */
+@media (max-width: 360px) {
+	.meeting {
+		height: 350px;
+	}
+
+	.M_buttons {
+		margin-top: 120px;
+	}
+
+	.M_buttons button {
+		height: 45px;
+		font-size: 13px;
+	}
+
+	.info-content h1 {
+		font-size: 20px;
+	}
+
+	.info-content span {
+		font-size: 12px;
+	}
+
+	.novelty-content h1 {
+		font-size: 20px;
+	}
+
+	.TBC-h1 {
+		font-size: 24px;
+	}
+
+	.blank h1 {
+		font-size: 13px;
+	}
+
+	.footer-navbar-menu li a {
+		font-size: 11px;
+		padding: 10px;
 	}
 }
 
