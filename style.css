@@ -1,7 +1,6 @@
 html {
 	margin: -8px 0 0 -8px;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 
 * {
@@ -14,7 +13,6 @@ img {
 }
 
 body {
-	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	height: 3773px;
@@ -678,15 +676,20 @@ footer {
 
 /* МОБИЛЬНАЯ АДАПТАЦИЯ - ПЛАНШЕТЫ */
 @media (max-width: 1024px) {
+	html {
+		overflow-x: hidden;
+	}
+
+	body {
+		overflow-x: hidden;
+		height: auto;
+	}
+
 	.meeting {
 		width: 100%;
 		height: 600px;
 		background-size: cover;
 		background-position: center;
-	}
-
-	body {
-		height: auto;
 	}
 
 	header {
